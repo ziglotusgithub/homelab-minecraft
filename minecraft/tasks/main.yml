@@ -1,2 +1,5 @@
 ---
-# Stuff goes here
+- file:
+    path: /tmp/foo.conf
+    state: touch
+    mode: "u=rw,g=r,o=r"
