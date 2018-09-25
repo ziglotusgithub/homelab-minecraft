@@ -1,5 +1,4 @@
 ---
-<<<<<<< Updated upstream
 - file:
     path: /tmp/foo.conf
     state: touch
