@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  minecraft:
+    image: docker pull itzg/minecraft-server
+    environment:
+      EULA: "TRUE"
+    volumes:
+      - {{ minecraft_dir }}/island:/
+    ports:
+      - '25565:25565'

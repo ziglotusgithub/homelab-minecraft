@@ -1,5 +1,26 @@
 ---
+<<<<<<< Updated upstream
 - file:
     path: /tmp/foo.conf
     state: touch
     mode: "u=rw,g=r,o=r"
+=======
+# Stuff goes here
+
+- name: Create directories for docker volumes
+  become: true
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: 1000
+    group: 1000
+    mode: 0755
+  with_items:
+    - "{{ minecraft_dir }}/island"
+
+- name: Generate docker stack file
+  template:
+    src: "docker-stack.yml.j2"
+    dest: "{{ minecraft_dir }}/docker-stack.yml"
+    mode: 0644
+>>>>>>> Stashed changes
