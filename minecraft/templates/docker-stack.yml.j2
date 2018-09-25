@@ -5,7 +5,7 @@ services:
   minecraft:
     image: docker pull itzg/minecraft-server
     environment:
-      EULA: "TRUE"
+      EULA: "FALSE"
     volumes:
       - {{ minecraft_dir }}/island:/
     ports:
