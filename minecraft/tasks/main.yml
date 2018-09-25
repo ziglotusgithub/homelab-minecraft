@@ -3,8 +3,6 @@
     path: /tmp/foo.conf
     state: touch
     mode: "u=rw,g=r,o=r"
-=======
-# Stuff goes here
 
 - name: Create directories for docker volumes
   become: true
