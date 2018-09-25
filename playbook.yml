@@ -1,7 +1,5 @@
 ---
 - name: playbook
-  vars:
-    minecraft_dir: '/minecraft'
   hosts: all
   roles:
     - role: minecraft

@@ -1,3 +1,3 @@
 ---
-# defaults file for ark
-minecraft_dir: /minecraft
+# defaults file for minecraft
+minecraft_dir: /data/minecraft

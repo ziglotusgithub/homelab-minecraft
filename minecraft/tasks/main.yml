@@ -1,9 +1,4 @@
 ---
-- file:
-    path: /tmp/foo.conf
-    state: touch
-    mode: "u=rw,g=r,o=r"
-
 - name: Create directories for docker volumes
   become: true
   file:
@@ -13,7 +8,7 @@
     group: 1000
     mode: 0755
   with_items:
-    - "{{ minecraft_dir }}/island"
+    - "{{ minecraft_dir }}"
 
 - name: Generate docker stack file
   template:
