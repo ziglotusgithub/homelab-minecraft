@@ -1,5 +1,5 @@
 ---
 - name: playbook
-  hosts: all
+  hosts: awx
   roles:
     - role: minecraft
